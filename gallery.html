@@ -1,0 +1,199 @@
+<html>
+<head>
+<link href="assest/css/style.css" rel="stylesheet">
+<title>Family</title>
+</head>
+<body bgcolor="#3d3d3d">
+
+<a name="First_Anchor"</a>
+
+<audio autoplay controls loop>
+  <source src="assest/audio/audio1.mp3" type="audio/mp3">
+
+</audio>
+
+
+<!--header -->
+<div class="sosmed">
+    <div class="container">
+        <ul>
+<center><a href="https://www.facebook.com/nor.hidayu.77985" target="_blank"><img src="assest/image/logo fb.png" width="50px" heigh="50px" </a></center> 
+
+<BR>
+
+<center><a href="https://www.instagram.com/hidayu.nor"target="_blank"><img src="assest/image/logo ig.png" width="50px" heigh="50px" </a></center> 
+             
+        </ul>
+</div>
+
+<BR><BR>
+
+<center> <div id="clock">8:10:45</div> </center> 
+ 
+    <script src="clock2.js"></script>
+ </style>
+</head>
+ 
+ 
+    <script>
+        setInterval(showTime, 1000);
+        function showTime() {
+            let time = new Date();
+            let hour = time.getHours();
+            let min = time.getMinutes();
+            let sec = time.getSeconds();
+            am_pm = "AM";
+ 
+            if (hour > 12) {
+                hour -= 12;
+                am_pm = "PM";
+            }
+            if (hour == 0) {
+                hr = 12;
+                am_pm = "AM";
+            }
+ 
+            hour = hour < 10 ? "0" + hour : hour;
+            min = min < 10 ? "0" + min : min;
+            sec = sec < 10 ? "0" + sec : sec;
+ 
+            let currentTime = hour + ":"
+                + min + ":" + sec + am_pm;
+ 
+            document.getElementById("clock")
+                .innerHTML = currentTime;
+        }
+ 
+        showTime();
+    </script>
+
+<header>
+  <div class="container">
+     <h1><a href="Index.html"></a>NORHIDAYU BINTI ROSLI</a></h1> 
+
+
+<BR>
+
+
+     <ul>
+        <li class="active"><a href="Index.html">HOME</a></li> 
+        <li><a href="biodata.html">BIODATA</a></li>
+        <li><a href="experience.html">EXPERIENCE</a></li> 
+        <li><a href="education.html">EDUCATION</a></li>
+        <li><a href="family.html">FAMILY</a></li>
+        <li><a href="gallery.html">GALLERY</a></li>
+       
+     </ul>
+  </div>
+</header>
+
+<!--banner-->
+<section class="banner">
+   <h2> WELCOME TO MY WEBSITE </h2>
+</section>
+
+
+<!--gallery-->
+<section class="gallery">
+	<div class="container">
+		<h3>GALLERY</h3>
+<h5>Gallery Image</h5>
+  <style>
+      .slider {
+        width: 500px;
+        height: 300px;
+        background-color: yellow;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0px;
+        text-align: center;
+        overflow: hidden;
+      }
+      .image-container {
+        width: 1500px;
+        background-color: pink;
+        height: 300px;
+        clear: both;
+        position: relative;
+        -webkit-transition: left 2s;
+        -moz-transition: left 2s;
+        -o-transition: left 2s;
+        transition: left 2s;
+      }
+      .slide {
+        float: left;
+        margin: 0px;
+        padding: 0px;
+        position: relative;
+      }
+      #slide-1:target ~ .image-container {
+        left: 0px;
+      }
+      #slide-2:target ~ .image-container {
+        left: -500px;
+      }
+      #slide-3:target ~ .image-container {
+        left: -1000px;
+      }
+      .buttons {
+        position: relative;
+        top: -20px;
+      }
+      .buttons a {
+        display: inline-block;
+        height: 15px;
+        width: 15px;
+        border-radius: 50px;
+        background-color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="slider">
+      <span id="slide-1"></span>
+      <span id="slide-2"></span>
+      <span id="slide-3"></span>
+      <div class="image-container">
+        <img src="assest/image/pic4.jpeg" class="slide" width="500" height="300" />
+        <img src="assest/image/pic2.jpeg" class="slide" width="500" height="300" />
+        <img src="assest/image/pic3.jpeg" class="slide" width="500" height="300" />
+      </div>
+      <div class="buttons">
+        <a href="#slide-1"></a>
+        <a href="#slide-2"></a>
+        <a href="#slide-3"></a>
+      </div>
+    </div>
+<BR><BR>
+
+<h5>Gallery Video</h5>
+
+<center>
+ <video width="40%" height="40%"  controls >
+  <source src="assest/video/video1.mp4" type="video/mp4">
+</video>
+<center>
+
+
+<BR><BR><BR><BR><BR>
+<marquee>
+Always Be Happy
+</marquee>
+
+<BR><BR><BR><BR>
+
+<h8> <center><a href="#First_Anchor"> <img src="assest/image/arrow.png" width="60" height="60"/></a></center> </h8>
+
+<BR><BR><BR>
+
+<!--footer-->
+<center>
+<footer>
+  <p>Author: Hidayu Rosli</p>
+  <p><a href="mailto:hidayurosli02@gmail.com">hidayurosli02@gmail.com</a></p>
+</footer>
+</center>
+
+
+</body>
+</html>
